@@ -141,7 +141,7 @@ First, merge the peak sets from the two factors so you just have one set of regi
 
 The motif that was the most enriched was different that the one that I found when analyzing alll Sox2 peaks. Below is the comparison between this new motif and the published motif for Sox2. These two motifs do share some similaritaries in their consensus bases, but they don't exactly match. 
 
-![sox2 motif new](/figuressox2.png)
+![sox2 motif new](figures/sox2.png)
 
 
 ## Discussion Questions
