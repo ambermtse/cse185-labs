@@ -111,7 +111,7 @@ We will next use the Homer utility `annotatePeaks.pl` to learn about where our p
 
 Be sure to label your axes and provide a legend or description of which color denotes which dataset.
 
-![Composite TSS plot](/read_counts_TSS.png)
+![Composite TSS plot](figures/read_counts_TSS.png)
 
 ## Motif finding
 
@@ -123,7 +123,7 @@ See: http://hocomoco11.autosome.ru/mouse/mono?full=false for published motifs fo
 
 I used the findMotifs.pl command from the HOMER motif analysis program to perform motif finding using the GRCm38.fa reference genome and the peaks file for each transcription factor. Below are the most enriched de Novo motif for each factor according to Homer and a comparison to published logos for these factors:
 
-![motifs](/motifs.png)
+![motifs](figures/motifs.png)
 
 These motifs align well to the published motifs, with most differences coming in the parts of the motifs that are not a consensus, where there is less of a clear winner for which base has the highest position weight. There is a very strong similarity between the motifs for Sox2 and Oct4, especially in the consensus parts of the motif sequence. 
 
@@ -135,13 +135,13 @@ First, merge the peak sets from the two factors so you just have one set of regi
 
 <font color="red">**Question 8 (6 pts)**</font> Make a scatter plot comparing normalized read counts for Oct4 vs. Sox2 that you got from the merged peak set. Highlight peaks (using a different color) that correspond to peaks with two-fold higher binding in Sox2 vs. Oct4.
 
-![overlap scatter](/overlap_scatter.png)
+![overlap scatter](figures/overlap_scatter.png)
 
 <font color="red">**Question 9 (6 pts)**</font> Repeat motif finding, but this time using only the peaks that were unique to Sox2 (fold change >2). Report the motif you found. Is this different than the motif you found when analyzing *all* Sox2 peaks? Does this match to published motifs for Sox2?
 
 The motif that was the most enriched was different that the one that I found when analyzing alll Sox2 peaks. Below is the comparison between this new motif and the published motif for Sox2. These two motifs do share some similaritaries in their consensus bases, but they don't exactly match. 
 
-![sox2 motif new](/sox2.png)
+![sox2 motif new](/figuressox2.png)
 
 
 ## Discussion Questions
